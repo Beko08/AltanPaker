@@ -16,7 +16,28 @@
         }
   
         @keyframes walk {
-          0% {
+            0% {
+            transform: translateX(0);
+          }
+  
+          50% {
+            transform: translateX(90%)
+          }
+        }
+
+        .dad {
+          position: fixed;
+          bottom: 800px;
+          left: 0px;
+          width: 500px;
+          height: 500px;
+          background-image: url("Untitled.png");
+          background-size: cover;
+          animation: walk 1s linear infinite;
+        }
+  
+        @keyframes walk {
+            0% {
             transform: translateX(0);
           }
   
@@ -24,6 +45,7 @@
             transform: translateX(100%)
           }
         }
+        
       </style>
   </head>
   <body style="background-color: blanchedalmond;">
@@ -40,6 +62,7 @@
     </header>
     <main>
         <div class="cat"></div>
+        <div class="dad"></div>
       <section id="about">
         <h2>About Altan Paker</h2>
         <img src="coffee.jpg" alt="Altan Paker">
