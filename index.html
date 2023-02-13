@@ -1,26 +1,26 @@
 <html>
   <head>
-    <title>Hide / Show Password - Easy Tutorials</title>
+    <title>Top Secret Webpage</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
   </head>
   <body>
   <div class="form-box">
-    <h1>Barclays Login Here</h1>
+    <h1>Login Here</h1>
     <div class="input-box">
       <i class="fa fa-envelope-o"></i>
-      <input type="email" placeholder="Email Id">
+      <input type="text" placeholder="username">
     </div>
     <div class="input-box">
       <i class="fa fa-key"></i>
-      <input type="password" placeholder="Password" id="myInput"> <!-- x -->
+      <input type="password" placeholder="password" id="myInput"> <!-- x -->
       <span class="eye" onclick="myFunction()">
         <i id="hide1" class="fa fa-eye"></i>              <!-- y -->
         <i id="hide2" class="fa fa-eye-slash"></i>        <!-- z -->
       </span>
     </div>
-    <button type="button" class="login-btn">LOGIN</button>
+    <button type="button" class="login-btn" onclick="checkLogin()">LOGIN</button>
   </div>
 
       <script>
@@ -39,6 +39,10 @@
             y.style.display = "none";
             z.style.display = "block";
           }
+        }
+
+        function checkLogin(){
+          var email 
         }
       </script>
 
