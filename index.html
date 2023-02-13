@@ -3,18 +3,22 @@
     <title>Top Secret Webpage</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
   </head>
   <body>
+
+
+    
+
+
   <div class="form-box">
     <h1>Login Here</h1>
     <div class="input-box">
       <i class="fa fa-envelope-o"></i>
-      <input type="text" placeholder="username">
+      <input id= "username" type="text" placeholder="username">
     </div>
     <div class="input-box">
       <i class="fa fa-key"></i>
-      <input type="password" placeholder="password" id="myInput"> <!-- x -->
+      <input id="password" type="password" placeholder="password"> <!-- x -->
       <span class="eye" onclick="myFunction()">
         <i id="hide1" class="fa fa-eye"></i>              <!-- y -->
         <i id="hide2" class="fa fa-eye-slash"></i>        <!-- z -->
@@ -25,7 +29,7 @@
 
       <script>
         function myFunction(){
-          var x = document.getElementById("myInput");
+          var x = document.getElementById("password");
           var y = document.getElementById("hide1");
           var z = document.getElementById("hide2");
 
@@ -42,7 +46,10 @@
         }
 
         function checkLogin(){
-          var email 
+          var username = document.getElementById("username").value;
+          var password = document.getElementById("password").value;
+          console.log(username, password);
+          // if(use)
         }
       </script>
 
