@@ -6,6 +6,7 @@
   </head>
   <body>
 
+    <A HREF="testfolder/world.html">About this site</A>
 
     
 
@@ -49,7 +50,10 @@
           var username = document.getElementById("username").value;
           var password = document.getElementById("password").value;
           console.log(username, password);
-          // if(use)
+          
+          if ((username == "berk") && (password == "paker")){
+            window.location.href = 'testfolder/world.html';
+          }
         }
       </script>
 

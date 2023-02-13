@@ -1,31 +1,107 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Login Page</title>
-  </head>
-  <body>
-    <form>
-      <label for="username">Username:</label>
-      <input type="text" id="username" name="username" required>
-      <br><br>
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password" required>
-      <br><br>
-      <input type="button" value="Login" onclick="checkLogin()">
-    </form>
-    <p id="message"></p>
-  </body>
+    <meta charset="UTF-8">
+    <title>Biography of Altan Paker</title>
+    <style>
+        .cat {
+          position: fixed;
+          bottom: 250px;
+          left: 0px;
+          width: 500px;
+          height: 500px;
+          background-image: url("https://i.pinimg.com/originals/10/d9/63/10d9631abb9778072c1da264a6d4709a.png");
+          background-size: cover;
+          animation: walk 1s linear infinite;
+        }
+  
+        @keyframes walk {
+            0% {
+            transform: translateX(0%);
+          }
+  
+          50% {
+            transform: translateX(90%)
+          }
+        }
 
-  <script>
-    function checkLogin() {
-      var username = document.getElementById("username").value;
-      var password = document.getElementById("password").value;
-      
-      if (username === "admin" && password === "password") {
-        document.getElementById("message").innerHTML = "Login Successful!";
-      } else {
-        document.getElementById("message").innerHTML = "Login Failed.";
-      }
-    }
-  </script>
+        .dad {
+          position: absolute;
+          bottom: 700px;
+          left: 0px;
+          width: 500px;
+          height: 500px;
+          background-image: url("Untitled.png");
+          background-size: cover;
+          animation: walk 1s linear infinite;
+        }
+  
+        @keyframes walk {
+            0% {
+            transform: translateX(0);
+          }
+  
+          50% {
+            transform: translateX(100%)
+          }
+        }
+        
+      </style>
+  </head>
+  <body style="background-color: blanchedalmond;">
+    <header>
+        <h1>Contents:</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About Altan</a></li>
+          <li><a href="#career">Altan's Career</a></li>
+          <li><a href="#achievements">Altan's Achievements</a></li>
+          <li><a href="#contact">How to Contact Altan</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <div class="cat"></div>
+        <div class="dad"></div>
+      <section id="about">
+        <h2>About Altan Paker</h2>
+        <img src="coffee.jpg" alt="Altan Paker">
+        <p>Altan Paker is a succesful business man. He is said to have billions of dollars in his bank account.
+             He also hits the gym a lot 😎 💪</p>
+      </section>
+      <section id="career">
+        <h2>Career</h2>
+        <img src="garden.jpg" alt="Altan Paker">
+        <p>He sells pots and pans. Man is a simple but rich international businessman!</p>
+      </section>
+      <section id="achievements">
+        <h2>Achievements</h2>
+        <img src="satdown.jpg" alt="Altan Paker">
+        <ul>
+          <li>Won a TV from a 'Buyaka' raffle</li>
+          <li>Has 'Ringo' </li>
+          <li>Business in Belgium</li>
+          <li>Söke un = big profit🤑🤑😴</li>
+        </ul>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <img src="plane.JPG" alt="Altan Paker">
+        <p>Altan is impossible to find because he is like a cat! He travels all around the world and does not stay at a single place for long...</p>
+      </section>
+    </main>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+      <p>&copy; [2023] Author: BerkEmrePaker</p>
+    </footer>
+  </body>
 </html>
